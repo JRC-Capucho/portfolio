@@ -87,7 +87,6 @@
   margin-bottom: 5px;
 }
 
-
 .container-mid {
   display: flex;
   flex-direction: column;
@@ -96,7 +95,7 @@
 }
 
 .container-mid-content {
-  margin-top: 4rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -105,21 +104,89 @@
 
 .container-mid-card-content {
   display: flex;
-  width: 50%;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
+.container-mid-card-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+}
+
 .container-mid-card-project {
   display: flex;
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
   background-color: var(--gray-300);
+}
+
+.container-bottom {
+  background: var(--gray-100);
+}
+
+.container-bottom-content {
+  margin: 5rem;
+
+}
+
+.container-bottom-card-project {
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: var(--gray-100);
+}
+
+.container-bottom-card-image {
+  width: 48px;
+  height: 48px;
+}
+
+.container-footer {
+  background-image: url("../assets/Background_Contacts.png");
+  background-size: cover;
+  object-fit: fill;
+}
+
+.container-footer-content {
+  margin: 3rem;
+  gap: 3rem;
+  display: grid;
+  justify-content: center;
+}
+
+.container-footer-content-links {
+  display: grid;
+  gap: 1rem;
+}
+
+.container-footer-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+  background-color: var(--gray-300);
+  padding: 1rem;
+}
+
+.container-footer-content-links a {
+  text-decoration: none;
+  font-family: "Maven Pro";
+  color: var(--gray-500);
 }
 
 .m-5 {
   margin: 5px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-md {
